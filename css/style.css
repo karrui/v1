@@ -1,0 +1,623 @@
+::selection {
+  background: #97c6ff;
+}
+
+::-moz-selection {
+  background: #97c6ff;
+}
+
+
+.bg-custom {
+  /* padding-right: 30px; */
+  background-color: #2f2fa2;
+}
+
+
+.navbar .navbar-brand:hover {
+  background-color: transparent;
+  transition: 0.4s all linear;
+  color: #f64c72;
+  border-color: #f64c72;
+  border-bottom: none;
+}
+
+.navbar .navbar-brand {
+  color: #f9f9f9;
+  text-transform: capitalize;
+  font-size: 1.3em;
+}
+
+a.nav-link {color:#f9f9f9!important}
+
+.navbar .navbar-nav > li > a {
+  color: #f9f9f9;
+  font-family: "Montserrat", sans-serif;
+  text-transform: lowercase;
+  font-size: 1.3em;
+  padding: 10px 0px 10px 10px;
+}
+
+.navbar .navbar-nav > li > a:hover {
+  color: #fc4445!important;
+  opacity: 1;
+  transition: 0.4s all linear;
+  border-bottom: none;
+}
+
+li > a.active {
+  color: #f64c72!important;
+  transition: 0.4s all linear;
+}
+
+body {
+  font-size: 14px;
+  color: #f9f9f9;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tooltip.bs-tooltip-bottom .tooltip-inner {
+  background:#130f30 !important;
+  white-space:pre-wrap;
+}
+
+.tooltip .arrow:before {
+  border-bottom-color:#130f30 !important;
+  border-top-color:#130f30 !important;
+}
+
+.intro-header {
+  margin: auto 0 0;
+  font-family: "Rubik", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3.5em;
+}
+
+.intro-tagline {
+  /* font-family: 'Roboto Mono', monospace; */
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.intro-text {
+  text-align: center;
+}
+
+.container-fluid {
+  width: 75%;
+  max-width: 1080px;
+}
+
+@media (max-width: 768px) {
+  .container-fluid {
+    width: 90%;
+    max-width: 90%;
+  }
+
+  .container {
+    width: 100;
+    max-width: 100%;
+  }
+
+  .landing {
+    position: relative;
+    min-height: 100vh;
+  }
+
+  .vertical-align > [class^="col-"],
+  .vertical-align > [class*=" col-"] {
+    display: flex;
+    align-items: center; /* Align the flex-items vertically */
+    justify-content: center; /* Optional, to align inner flex-items
+                              horizontally within the column  */
+  }
+
+  .timeline {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    text-align: left;
+  }
+
+  .footer_links {
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) {
+  .landing {
+    min-height: 80vh;
+    position: relative;
+  }
+
+  .vertical-align {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .vertical-align > [class^="col-"],
+  .vertical-align > [class*=" col-"] {
+    display: flex;
+    align-items: center; /* Align the flex-items vertically */
+  }
+
+  .timeline {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    text-align: right;
+  }
+
+  .footer_links {
+    float: right;
+  }
+}
+
+a {
+  color: #97c6ff;
+}
+
+a:hover {
+  color: #97c6ff;
+  text-decoration: none;
+  border-bottom: 2px solid #97c6ff;
+  transition: 0.4s;
+}
+
+a:active {
+  color: #97c6ff;
+  text-decoration: none;
+}
+
+a:focus {
+  color: #97c6ff;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #97c6ff;
+}
+
+.find-more {
+  font-family: "Roboto Mono", monospace;
+  margin: auto 0 0;
+  text-align: center;
+  display: block;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.find-more a {
+  color: #f9f9f9;
+}
+
+.find-more a:hover {
+  border-bottom: none;
+  color: #97c6ff;
+}
+
+.find-more a:focus {
+  border-bottom: none;
+}
+
+.Bounce {
+  -moz-animation: bounce 2s 1;
+  -webkit-animation: bounce 2s 1;
+  animation: bounce 2s 1;
+}
+
+div .section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.status_lookout {
+  padding-top: 5px;
+}
+
+.lookout_msg {
+  color: #f9f9f9;
+}
+
+.section_header {
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  padding-bottom: 25px;
+  color: #f9f9f9;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.section_content {
+  margin-bottom: 10px;
+}
+
+.Blink {
+  margin-bottom: 1px;
+  font-size: 0.7em;
+  padding-left: 0;
+  color: #f64c72;
+  animation: blinker 1.5s cubic-bezier(0.5, 0, 1, 1) infinite alternate;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes blinker {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.resume {
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.resume-link {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 1.5em;
+  letter-spacing: 1.2px;
+  text-transform: lowercase;
+}
+
+.resume-link a {
+  color: #f9f9f9;
+}
+
+.resume-link a:hover {
+  border-bottom: 1px solid;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.even {
+  background-color: #2f2fa2;
+}
+
+.odd {
+  background-color: #242582;
+}
+
+span.about_header {
+  color: #fe8019;
+}
+span.about_highlight {
+  color: #fbf1c7;
+  font-weight: bold;
+}
+
+span.highlight {
+  font-weight: 600;
+}
+
+div .section_title {
+  font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-size: 1.2em;
+}
+
+.skill {
+  display: inline-block;
+}
+
+.skill .skill-icon {
+  text-align: center;
+  font-size: 3.5em;
+}
+
+.skill .skill-name {
+  margin-top: 5px;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.skill_cat,
+.course_cat_bullet {
+  margin-left: 0px;
+  margin-bottom: 2px;
+}
+
+.skill_cat_bullet {
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.95em;
+}
+
+div .section_title > .background {
+  color: #f64c90;
+}
+
+div .skill_cat {
+  min-height: 150px;
+}
+
+.job-title,
+div .skill_cat_label,
+div .project_title_label,
+div .course_cat_label {
+  font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  color: #fec5df;
+  margin-bottom: 3px;
+}
+
+.course_id {
+  display: inline-block;
+  padding: 2px 2px;
+  font-size: 0.8em;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  color: #bdc6ff;
+  font-family: "Roboto Mono", monospace;
+}
+
+.in_progress {
+  display: inline-block;
+  font-size: 0.7em;
+  color: #b1b6d5;
+}
+
+.logo {
+  max-height: 60px;
+  padding-bottom: 10px;
+}
+
+.company-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  text-align: left;
+}
+
+
+div .project-description {
+  color: #f9f9f9;
+}
+
+div .project_misc {
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.85em;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.project-title {
+  margin-top: 10px;
+}
+/* technology not real button */
+.btn-static {
+  margin-top: 5px;
+  display: inline-block;
+  padding: 3px 6px;
+  margin-bottom: 0;
+  font-size: 0.8em;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  color: #bdc6ff;
+  background-color: transparent;
+  border-color: #bdc6ff;
+  font-family: "Roboto Mono", monospace;
+}
+
+/* Hover effect */
+
+.overlayeffect {
+  position: relative;
+}
+
+.overlay {
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  top: auto;
+  bottom: 0;
+  padding: 1em;
+  height: 4.75em;
+  color: #3c4a50;
+}
+
+.overlay p.icon-links a {
+  float: right;
+  color: #6f848d;
+  font-size: 2em;
+  padding-left: 5px;
+  padding-right: 5px;
+  background: #f9f9f9;
+  background: rgba(249, 249, 249, 0.7);
+}
+
+.overlay:hover p.icon-links a:hover {
+  color: #1b2f48;
+  border-bottom: none;
+}
+
+/* Scroll to top button styling */
+.scrollTo-top {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 20px;
+  font-size: 2em;
+  color: #f9f9f99b;
+  border-radius: 0.3rem;
+  z-index: 500;
+}
+.scrollTo-top :hover {
+  color: #f64c72;
+  transition: 0.4s all linear;
+}
+
+i {
+  padding: 3px 10px;
+}
+
+/* Portfolio image styles */
+.project-block {
+  display: inline-block;
+  padding: 2%;
+}
+
+.project-info {
+  margin-top: 85%;
+}
+
+.contact-blurb {
+  text-align: center;
+}
+
+.contact-wrapper {
+  max-width: 500px;
+}
+
+/* form submission styling */
+.form-control {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #f9f9f9;
+  border-radius: 0px;
+  color: #f9f9f9;
+  box-shadow: none;
+}
+
+textarea[name="InputMessage"] {
+  resize: none;
+}
+
+.form-control:focus {
+  border-color: transparent;
+  border-bottom: 2px solid #f64c72;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #f9f9f9;
+  background-color: transparent;
+}
+
+.custom-select.is-invalid:focus, .form-control.is-invalid:focus, .was-validated .custom-select:invalid:focus, .was-validated .form-control:invalid:focus,
+.custom-select.is-valid:focus, .form-control.is-valid:focus, .was-validated .custom-select:valid:focus, .was-validated .form-control:valid:focus {
+  box-shadow: none;
+}
+
+.btn-info {
+  color: #f9f9f9;
+  background-color: transparent;
+  border-color: #f9f9f9;
+}
+
+.btn-info:hover,
+.btn-info:active,
+.btn-info:active:focus,
+.btn-info:focus {
+  color: #97c6ff;
+  background-color: transparent;
+  border-color: #97c6ff;
+  transition: 0.4s all linear;
+}
+
+.invalid-feedback {
+  padding-top: 5px;
+  font-size: 0.8em;
+  color: #f64c72;
+}
+
+.form-group {
+  min-height: 79px;
+}
+
+#error_message {
+  color: #f64c72;
+  text-align: center;
+  min-height: 20px;
+}
+
+.avatar img {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+
+.contact-icons {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.contact-icons a {
+  color: #f9f9f9;
+}
+
+.contact-icons a:visited {
+  color: #f9f9f9;
+}
+
+/* footer */
+#footer {
+  min-height: 40px;
+  color: #bdc6ff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 0.8em;
+  line-height: 20px;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+}
